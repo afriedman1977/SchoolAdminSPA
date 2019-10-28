@@ -19,7 +19,7 @@
     </table>
 
     <h3>Add Test</h3>
-    <input type="number" ng-model="newTest.mark"/>
+    <input type="number" ng-model="newTest.mark" ng-change="checkNumber()"/>
     <input type="text" ng-model="newTest.subject"/>
     <input type="date" ng-model="newTest.date"/>
     <button ng-click="saveTest()">Save Test</button>

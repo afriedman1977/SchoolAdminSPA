@@ -40,6 +40,7 @@ function editCtrl($scope, $http, $location) {
         })
     }
 
+
     $scope.saveStudent = function () {
         $http.post('/student/AddStudent', $scope.student).then(function () {
             window.location.href = '/home/index'
@@ -94,6 +95,14 @@ function testCtrl($scope, $http) {
         $http.post('/test/AddTest', test).then(function (data) {
             location.reload();
         })
+    }
+
+    $scope.checkNumber = function() {
+        if ($scope.newTest.mark < 0) {
+            $scope.newTest.mark = 0;
+        } else if ($scope.newTest.mark > 100) {
+            $scope.newTest.mark = 100;
+        }
     }
 
     function init() {
