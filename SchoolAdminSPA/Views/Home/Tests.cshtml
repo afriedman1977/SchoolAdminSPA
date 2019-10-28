@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+}
+<div ng-controller="testCtrl">
+    <h2>Tests for {{student.firstName + ' ' + student.lastName}}</h2>
+
+    <table class="table table-bordered table-striped">
+        <tr>
+            <th>Mark</th>
+            <th>Subject</th>
+            <th>Date</th>
+        </tr>
+
+        <tr ng-repeat="test in student.tests">
+            <td>{{test.mark}}</td>
+            <td>{{test.subject}}</td>
+            <td>{{test.date | date}}</td>
+        </tr>
+    </table>
+
+    <h3>Add Test</h3>
+    <input type="number" ng-model="newTest.mark"/>
+    <input type="text" ng-model="newTest.subject"/>
+    <input type="date" ng-model="newTest.date"/>
+    <button ng-click="saveTest()">Save Test</button>
+</div>
+

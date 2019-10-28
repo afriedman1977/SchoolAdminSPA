@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolAdminSPA", "SchoolAdminSPA\SchoolAdminSPA.csproj", "{B0BB808E-B75B-4291-BD60-E4DB8A0FA91D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dal", "Dal\Dal.csproj", "{ECE8D846-5314-41FA-BEF1-626DC4DAEAAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0BB808E-B75B-4291-BD60-E4DB8A0FA91D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0BB808E-B75B-4291-BD60-E4DB8A0FA91D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0BB808E-B75B-4291-BD60-E4DB8A0FA91D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0BB808E-B75B-4291-BD60-E4DB8A0FA91D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECE8D846-5314-41FA-BEF1-626DC4DAEAAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECE8D846-5314-41FA-BEF1-626DC4DAEAAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECE8D846-5314-41FA-BEF1-626DC4DAEAAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECE8D846-5314-41FA-BEF1-626DC4DAEAAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+<div ng-controller="editCtrl">
+    <h2>{{action}} Student</h2>
+
+    <div class="form-group">
+        <label>First Name</label>
+        <input class="form-control" type="text" ng-model="student.firstName" placeholder="First Name" required />
+    </div>
+    <div class="form-group">
+        <label>Last Name</label>
+        <input class="form-control" type="text" ng-model="student.lastName" placeholder="Last Name" required />
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input class="form-control" type="email" ng-model="student.email" placeholder="Email" required />
+    </div>
+    <div class="form-group">
+        <label>Phone Number</label>
+        <input class="form-control" type="text" ng-model="student.phoneNumber" placeholder="Phone Number" required maxlength="10" m />
+    </div>
+    <button ng-if="new == true && validate()" class="btn btn-primary" ng-click="saveStudent()">Add</button>
+    <button ng-if="new == false && validate()" class="btn btn-primary" ng-click="editStudent()">Edit</button>
+</div>
+
+<p>Use this area to provide additional information.</p>
